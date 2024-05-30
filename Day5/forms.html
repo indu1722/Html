@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+
+    }
+  </style>
+</head>
+
+<body>
+  <fieldset style="width: 40%;">
+    <legend>Application blank</legend>
+    <form style="background-color: rgb(255, 208, 230);">
+      <label for="fname">enter username:</label>
+      <input type="text" placeholder="username" required pattern="[a-z]{5}" id="frame">
+      <br><br>
+      <label for="email">enter email:</label>
+      <input type="text" placeholder="email" required pattern="a-z A-Z@ chars" id="email">
+      <br><br>
+      <label for="password">enter password:</label>
+      <input type="password" placeholder="password" required pattern="[a-z A-Z@#$]{20,100}" id="password">
+      <br><br>
+      <label for="phone">phone number:</label>
+      <input type="number" placeholder="phone" required pattern="{10}" id="phone">
+      <br><br>
+      <label for="fname">enter username:</label>
+      <input readonly type="text" placeholder="username" required pattern="[a-z]{5}" id="frame">
+      <br><br>
+      <label for="fname">enter username:</label>
+      <input disabled type="text" placeholder="username" required pattern="[a-z]{5}" id="frame">
+      <br><br>
+      <label for="address">Address:</label>
+      <input type="text" placeholder="address" id="address">
+      <br><br>
+      <label for="dob">D0B</label>
+      <input type="date" placeholder="DOB" id="dob">
+      <br><br>
+      <label for="week">Week:</label>
+      <input type="week" placeholder="week" id="week">
+      <br><br>
+      <p>Enter gender:</p>
+
+      <input type="radio" id="male" name="gender" value="user is male">
+      <label for="male">Male</label>
+      <input type="radio" id="Female" name="gender" value="user is female">
+      <label for="Female">Female</label>
+      <input type="radio" id="others" name="gender" value="prefer may not be say">
+      <label for="others">others</label>
+      <br><br>
+      <p>Enter Fav bike:</p>
+      <input type="checkbox" id="bike1" name="bike1" value="Duke390">
+      <label for="bike1">Duke390</label>
+      <input type="checkbox" id="bike2" name="bike2" value="Royalenfield">
+      <label for="bike2">Royalenfield</label>
+      <input type="checkbox" id="bike3" name="bike3" value="ktm">
+      <label for="bike3">ktm</label>
+      <input type="checkbox" id="bike4" name="bike4" value="Moto">
+      <label for="bike4">Moto</label>
+      <br><br>
+      <input type="file" multiple>
+      <br><br>
+      <input style="background-color: rgb(91, 199, 91);" type="submit" value="register">
+      <input style="background-color: rgb(244, 74, 74);" type="reset" value="cancel">
+
+    </form>
+  </fieldset>
+</body>
+
+</html>
